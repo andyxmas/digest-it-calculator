@@ -1,9 +1,9 @@
 <template>
-<div class="container p-4">
+<div class="container p-2">
 
   <h1 class="text-xl mb-8">How much digest-it do I need?</h1>
 
-  <div class="flex space-x-4">
+  <div class="flex space-x-2">
     <div>
       <label for="cows" class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
         Cows 
@@ -12,7 +12,7 @@
         inputmode="numeric"
         name="cows"
         v-model="cows"
-        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-24"
+        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-20"
       />
     </div>
     <div>
@@ -23,7 +23,7 @@
         inputmode="numeric"
         name="calves"
         v-model="calves"
-        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-24"
+        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-20"
         />
     </div>
 
@@ -35,7 +35,7 @@
       readonly 
         name="required"
         v-model="required"
-        class="bg-blue-200 appearance-none border-2 border-blue-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-24"
+        class="bg-blue-200 appearance-none border-2 border-blue-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-full"
         />
     </div>
   </div>
