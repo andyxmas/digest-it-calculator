@@ -116,4 +116,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+</style>
