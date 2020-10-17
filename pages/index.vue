@@ -1,7 +1,7 @@
 <template>
-<div class="container">
+<div class="container p-4">
 
-  <h1 class="text-xl">How much digest-it do I need?</h1>
+  <h1 class="text-xl mb-8">How much digest-it do I need?</h1>
 
   <div class="flex space-x-4">
     <div>
@@ -9,6 +9,7 @@
         Cows 
       </label>
       <input type="number" 
+        inputmode="numeric"
         name="cows"
         v-model="cows"
         class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-24"
@@ -19,6 +20,7 @@
         Calves 
       </label>
       <input type="number" 
+        inputmode="numeric"
         name="calves"
         v-model="calves"
         class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-24"
@@ -52,7 +54,8 @@ export default {
   },
   computed: {
     required: function() {
-      return this.cows * this.cows_multiplier + this.calves * this.calves_multiplier
+      let amount = this.cows * this.cows_multiplier + this.calves * this.calves_multiplier
+      return Math.ceil(amount)
     }
   }
 }
