@@ -1,6 +1,6 @@
 <template>
   <div class="container p-2">
-    <h1 class="mb-4 text-green-400 text-lg font-bold">Digest-it Calculator</h1>
+    <h1 class="mb-4 text-lg font-bold">Digest-it Calculator</h1>
 
     <ul class="flex border-b mb-2">
       <li :class="{'-mb-px': tab == 'standard'}" class="mr-1">
@@ -178,5 +178,9 @@ export default {
   max-width: 360px;
   margin: 0 auto;
   min-height: 100vh;
+}
+
+h1 {
+  color: #1e5316;
 }
 </style>
