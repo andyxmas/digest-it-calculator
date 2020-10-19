@@ -42,6 +42,9 @@ export default {
             name: 'Digest-it Calculator',
             short_name: 'digestitcalc',
             lang: 'en',
+        },
+        workbox: {
+            cleanupOutdatedCaches: true
         }
     }
 }
