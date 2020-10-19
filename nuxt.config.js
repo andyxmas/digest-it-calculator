@@ -42,11 +42,12 @@ export default {
         manifest: {
             name: 'Digest-it Calculator',
             lang: 'en',
-        },
-        workbox: {
-            preCaching: [
-                { url: '/index.html', revision: '2' },
-            ]
+            start_url: './'
         }
+        // workbox: {
+        //     preCaching: [
+        //         { url: '/index.html', revision: '2' },
+        //     ]
+        // }
     }
 }

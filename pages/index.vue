@@ -107,7 +107,7 @@
 </div>
 
 <h2 class="block text-gray-500 font-bold mb-1 pr-4 mt-8">Digest-it required</h2>
-<p class="text-xl font-bold">{{ required }} </p>
+<p class="text-xl font-">{{ required }} </p>
   </div>
   </div>
 </template>
