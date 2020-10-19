@@ -66,16 +66,16 @@
     
     </div>
 
-<h2 class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 mt-8">Slurry volume</h2>
+<h2 class="block text-gray-500 font-bold mb-1 pr-4 mt-8">Slurry volume</h2>
 <div class="flex space-x-2">
   
 
-    <p class="w-full"><strong>g</strong>: {{ g | dp }}</p>
-    <p class="w-full"><strong>M3</strong>: {{ m3 | dp }}</p>
+    <p class="w-full"><strong>Gallons</strong> {{ gallons| dp }}</p>
+    <p class="w-full"><strong>M<sup>3</sup></strong> {{ m3 | dp }}</p>
 
 </div>
 
-<h2 class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 mt-8">Digest-it required</h2>
+<h2 class="block text-gray-500 font-bold mb-1 pr-4 mt-8">Digest-it required</h2>
 <p class="text-xl">{{ required}} </p>
   </div>
 </template>
@@ -93,7 +93,7 @@ export default {
     }
   },
   computed: {
-    g: function() {
+    gallons: function() {
       if (this.unit == 'm') {
         return (this.length * this.width * this.height) * 219.969
       } else if (this.unit == 'ft') {
@@ -101,7 +101,7 @@ export default {
       }
     },
     m3: function () {
-      return this.g/1000 * 4.5
+      return this.gallons/1000 * 4.5
     },
     required: function () {
       let amount = this.m3 / this.per_m_divisor
