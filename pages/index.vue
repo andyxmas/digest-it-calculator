@@ -101,13 +101,13 @@
 <div class="flex space-x-2">
   
 
-    <p class="w-full"><strong>Gallons</strong> {{ gallons| dp }}</p>
-    <p class="w-full"><strong>M<sup>3</sup></strong> {{ m3 | dp }}</p>
+    <p class="w-full">{{ gallons| dp }} Gallons</p>
+    <p class="w-full">{{ m3 | dp }} M<sup>3</sup></p>
 
 </div>
 
 <h2 class="block text-gray-500 font-bold mb-1 pr-4 mt-8">Digest-it required</h2>
-<p class="text-xl">{{ required}} </p>
+<p class="text-xl font-bold">{{ required }} </p>
   </div>
   </div>
 </template>
