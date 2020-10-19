@@ -43,5 +43,10 @@ export default {
             name: 'Digest-it Calculator',
             lang: 'en',
         },
+        workbox: {
+            preCaching: [
+                { url: '/index.html', revision: '2' },
+            ]
+        }
     }
 }
